@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:#eddbc7;
+    
+    
+}
+h1{
+    color: black;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: black;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+
+}
+header div{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+
+}
+
+ol{
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+body{
+    color: black;
+    background-color: #F9F5E7;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.aviso-pagina{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#a7727d;
+    font-size: 20px;
+    padding: 3px;
+
+}
+
+.imagen-logo{
+    width: 150px;
+    height: 150px;
+    
+
+}
+
+
+.lista-menu{
+    display: flex;
+    flex-direction: row;
+    flex-direction: wrap;
+    align-content: center;
+    margin:20px;
+
+    justify-content: space-around;
+    font-size: 20px;
+    
+}
+
+.productos img{
+    display: grid;
+    
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+
+
+/*PAGINA GIFT CARDS*/
+
+.gift-cards {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 50px;
+    gap: 100px;
+
+}
+
+.cards img{
+    width: 320px;
+    height: 320px;
+    background-color: #eddbc7;
+    padding: 15px;
+    border: solid;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*PAGINA CONTACTO*/
+
+.contacto-página{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 50px ;
+    
+    font-size: 20px;
+
+}
+.formulario-página form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 40px 40px ;
+    padding: 30px;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 25px;
+}
+
+
+
+.cajita-formulario{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+        
+}
+
+/* ver porque no me lo toma*/
+.boton-enviar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+    
+}
+
+
+
+/*PÁGINA CONTACTO*/
+
+.informacion-pagina {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #F9F5E7;
+}
+

@@ -10,3 +10,10 @@ Crear repo en GIT:
 
 5) Confirmar los cambios con: git commit -m "algun mensaje descriptivo"
 
+Crear ramas:
+
+1) Saber en cual rama estoy: git branch
+
+2) Crear nueve rama: git branch nombrederama
+
+3)

@@ -10,6 +10,16 @@ Crear repo en GIT:
 
 5) Confirmar los cambios con: git commit -m "algun mensaje descriptivo"
 
+6) para ver los commits realizados, los listamos con el comando git log --oneline para verlos en una sola linea
+
+7) supongamos que me equivoque en agregar el titulo, quiero volver al punto anterior del texto, busco el numero de commit y me muevo hacia ese punto
+    git checkout numerodecommit
+
+8) como fusionar las ramas? MERGE
+    vas a tu rama principal main
+    git merge nombredelarama /* esa rama es la que hice el cambio*/
+
+9) para subir los cambios a github: git push    
 Crear ramas:
 
 1) Saber en cual rama estoy: git branch
@@ -17,3 +27,8 @@ Crear ramas:
 2) Crear nueve rama: git branch nombrederama
 
 3) Cambiar de rama en rama: git checkout nombredemirama
+
+4) para borrar la rama que no voy a usar: git branch -D nombredelarama
+
+
+

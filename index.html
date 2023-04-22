@@ -10,78 +10,195 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+    <!-- CSS DE BOOTSTRAP
+    <link rel="stylesheet" href="../Mi proyecto2/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css"> -->
+
+    <!-- este link lo saco de la pagina de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+    <!-- CSS PROPIO-->
+    <link rel="stylesheet" href="../Mi proyecto2/css/styles.css">
+
+
+
+
 </head>
 <body>
     <header>
         <p class="aviso-pagina">COMPRAS A PARTIR DE $5000 | ENVIO GRATIS A TODO EL PAÍS | 6 CUOTAS SIN INTERES</p>
-        <div>
-            <img src="/img/logo shimmer.jpeg" alt="logo shimmer" class="imagen-logo">
-            <h1>SHIMMER BAGS</h1>
-        </div>
-            <nav>
-                <ol class="lista-menu">
-                    <li>
-                    <a href="/index.html">Inicio</a>
-                    </li>
+        
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a href="index.html">
+                    <img src="/img/logo shimmer.jpeg" alt="logo shimmer" class="imagen-logo">
+                </a>
+                <h1>SHIMMER BAGS</h1>
+              
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio
 
-                    <li>
-                    <a href="pages/nueva-colección.html">Nueva Colección</a>
-                    </li>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nueva-colección.html">Nueva Colección
 
-                    <li>
-                    <a href="pages/temporadas-anteriores.html">Temporadas Anteriores</a>
-                    </li>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nueva-colección.html">Temporadas Anteriores
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nueva-colección.html">Contacto
+
+                            </a>
+                        </li>
+                        
+                        
 
 
-                    <li>
-                    <a href="pages/gift-cards.html">Gift-Cards</a>
-                    </li>
-
-                    <li>
-                    <a href="pages/contacto.html">Contacto</a>
-                    </li>
-
-                    <li>
-                    <a href="pages/+info.html">+Info</a>
-                    </li>
-                </ol>
-            </nav>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                +Info
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+            </div>
+            </div>
+        </nav>
         
     </header>
 
-    <h2>Titulo modificado con GIT</h2>
+    <main>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/4.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/6.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        
+        </section>
+            <div class="boton-1">
+                <nav>
+                    <button>
+                        <a href="pages/nueva-colección.html">COMPRAR AHORA</a>
+                    </button>
+                </nav>
+            </div>
+            <div>
+                <h2>
+                    PRODUCTOS DESTACADOS
+                </h2>
+            </div>
+        </section>
 
-
-    <div class="productos">
-        <img src="/img/IMG-1776.jpg" alt="cartera-1">
-
-    </div>
-
-    <div class="productos">
-        <img src="/img/IMG-1783.jpg" alt="cartera-2">
-    </div>
-
-    <div class="productos">
-        <img src="/img/IMG-1784.jpg" alt="cartera-3">
-
-    </div>
-
-    <div class="productos">
-        <img src="img/IMG-1785.jpg" alt="mochila-1">
-
-    </div>
-
-    <div class="productos">
-        <img src="img/IMG-1786.jpg" alt="mochila-2">
-    </div>
-
-    <div class="productos">
-        <img src="img/IMG-1864.jpg" alt="mochila-3">
-
-    </div>
-
-
-
+        <div id="carrusel-imagenes">
+                <div class="carrusel">
+                    <img src="img/7.png" alt="foto7">
+                    <h3>
+                        Mochila Haly
     
+                    </h3>
+                </div>
+
+                <div class="carrusel">
+                    <img src="img/8.png" alt="foto8" >
+                    <h3>
+                        Mochila Dyna
+                    </h3>
+                </div>
+                <div class="carrusel">
+                    <img src="img/9.png" alt="foto9">
+                    <h3>
+                        Cartera París
+                    </h3>
+                </div>
+                <div class="carrusel">
+                    <img src="img/10.png" alt="foto10">
+                    <h3>
+
+                    </h3>
+                </div>
+                <div class="carrusel">
+                    <img src="img/11.png" alt="foto11">
+                    <h3>
+
+                    </h3>
+                </div>
+                <div class="carrusel">
+                    <img src="img/12.png" alt="foto12">
+                    <h3>
+                        
+                    </h3>
+                </div>
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <div class="boton-2">
+            <nav>
+                <div class="boton-seguinos">
+                    <a href="https://www.instagram.com/shimmerbags_/" target="_blank">SEGUINOS</a>
+                </div>
+            
+                <button class="boton-shimmerbags">
+                    <a href="https://www.instagram.com/shimmerbags_/" target="_blank">@SHIMMERBAGS_</a>
+                </button>
+            </nav>
+        </div>
+    </footer>
+
+
+    <!-- script se aplica antes del cierre del body, es para aplicar java
+    <script src="../Mi proyecto2/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script> -->
+
+    <!-- este link lo saco de la pagina de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+
+
 </body>
 </html>

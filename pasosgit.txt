@@ -16,4 +16,4 @@ Crear ramas:
 
 2) Crear nueve rama: git branch nombrederama
 
-3)
+3) Cambiar de rama en rama: git checkout nombredemirama

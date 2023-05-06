@@ -21,6 +21,8 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+
 }
 
 h1{
@@ -29,6 +31,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 h2{
@@ -41,7 +44,8 @@ h2{
     justify-content: center;
     align-items: center;    
     padding: 50px;
-
+    text-align: center;
+    background-;
 }
 
 header div{
@@ -53,6 +57,15 @@ ol{
 }
 
 a{
+    text-decoration: none;
+    color: black;
+}
+
+li a{
+    text-decoration: none;
+    color:black;
+}
+button a{
     text-decoration: none;
     color: black;
 }
@@ -73,10 +86,13 @@ a{
     width: 100px;
     height: 100px;
     
-
 }
 
-
+.logo-titulo-header{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 .lista-menu{
     display: flex;
     flex-direction: column;
@@ -98,18 +114,22 @@ a{
 .lista-menu li:active{
     background-color: white;
 }
-.lista-menu li:first-child{
-    background-color: aqua; /* prueba de como funciona*/
 
-}
+/*
+.lista-menu li:first-child{
+    background-color: aqua;  prueba de como funciona*/
+
+/*
 .lista-menu li:nth-child(2){
     background-color: aqua; 
 } 
+*/
 
 /*estilo a los pares
 .lista-menuli:nth-child(even)*/
 /*estilo a los impares
 .lista-menu li:nth-child(odd)*/
+
 
 
 /*PAGINA INDEX*/
@@ -147,26 +167,51 @@ button{
 
 }
 
+.d-block {
+    width: 250px;
+    height: 300px;
+    padding: 20px;
+}
+
 #carrusel-imagenes {
     display:flex;
     
     flex-wrap: nowrap;
-    overflow: scroll;
+    overflow:scroll;
+
 
     max-width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-color:white;
+    height: 420px;
+    
+    
 }
 .carrusel{
     flex: 1 0 auto;
-    margin: 20px 30px;
+    margin: 20px 10px;
 
     width: 300px;
-    height: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 
 }
 
+.imagen-carrusel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 280px;
+    border: solid;
+
+
+}
 
 .boton-2{
     display: flex;
@@ -189,14 +234,74 @@ button{
 }
 .boton-shimmerbags{
     border: none;
+    width: 200px;
+    height: 50px;
     background-color:#F9F5E7;
-    font-size: 25px;
+    font-size: 20px;
     font-weight:700;
 }
 
+.footer-pagina{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.footer-boton{
+    border: none;
+    background-color: #eddbc7;
+    padding: 15px;
+    
+}
+
+.footer-datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eddbc7;
+    padding: 50px;
+    
+}
 
 
+.iconos-chicos{
+    height: 20px;
+    width: 20px;
+}
+
+.btn-wsp{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+    bottom: 50px;
+    right: 30px;
+    background: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow:  0px 1px 10px rgba(0,0,0,0.3);
+    z-index: 100;
+}
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0df053;
+    background: #fff;
+
+}
+.icono-whatsapp{
+    width: 40px;
+
+
+}
 /*PAGINA NUEVA COLECCIÓN*/ 
+
+.color-pagina{
+        background-color:rgb(246, 240, 232);
+
+}
 .titulo-productos{
     margin: 20px;
     padding: 20px;
@@ -233,10 +338,12 @@ button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    text-align: center;
+    font-size: 14px;
     
 
 }
+
 
 .mochilas,.carteras{
     display: flex;
@@ -246,6 +353,8 @@ button{
     padding: 20px;
     border: solid 1px; 
     width: 250px;
+
+    
 }
 
 .boton-agregar-carrito{
@@ -280,9 +389,85 @@ button{
 }
 
 
+/* TEMPORADAS ANTERIORES */
+.card{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+    gap: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*PAGINA GIFT CARDS*/
 
+.aviso-gift{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+
+    background-image: url(../img/fondo-pared-rosaviejojpg.jpg);
+
+}
+
+#carrusel-imagenes-gift {
+    display:flex;
+    
+    flex-wrap: nowrap;
+    overflow:scroll;
+
+
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:rgb(246, 240, 232);
+    height: 400px;
+    
+    
+    
+}
+.carrusel-gift{
+    flex: 1 0 auto;
+    margin: 20px 10px;
+
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+
+
+}
+
+.imagen-carrusel-gift{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: solid;
+
+
+}
+/*
 #carrusel2-imagenes{
     display: grid;
     overflow: scroll;
@@ -291,13 +476,14 @@ button{
 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 20px;
-
+    gap: 200px;
+    ;    
 }
 
 .gift-cards-3000{
     background-image: url(../img/gift-3000.png);
     grid-area: gift-cards-3000;
+       
 }
 .gift-cards-5000{
     background-image: url(../img/gift-5000.png);
@@ -330,7 +516,7 @@ button{
 
 
 }
-
+*/
 
 
 
@@ -341,22 +527,27 @@ button{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    gap: 20px;
-    padding: 50px ;
-    
+    padding: 10px ;
+    background-image: url(../img/fondo-pared-rosaviejojpg.jpg);
     font-size: 20px;
+    font-weight: 700;
 
+
+}
+.fondo-titulo{
+    background-color: #E4D0D0;
 }
 .formulario-página form{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 40px 40px ;
+    margin: 20px;
     padding: 30px;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 
-    font-size: 25px;
+    font-size: 15px;
 }
 
 
@@ -428,6 +619,12 @@ button{
         padding: 10px;
     }
 
+    .d-block {
+        width: 500px;
+        height: 600px;
+        padding: 50px;
+    }
+
     .padre-cards {
         display: flex;
         flex-direction: row;
@@ -449,7 +646,18 @@ button{
         width: 300px;
     }
     
+    .formulario-página form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 20px;
+        padding: 30px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
     
+        font-size: 20px;
+    }
 }
 
 
@@ -458,17 +666,18 @@ button{
 
 @media (min-width: 992px) {
     .imagen-logo{
-        width: 200px;
-        height: 200px;
+        width: 150px;
+        height: 150px;
+    
         
     }
     
     .lista-menu{
         flex-direction: row;
-        gap: 20px;
+        gap:20px;
     }
 
-
+    
 
 
     .carrusel{
@@ -478,6 +687,12 @@ button{
         width: 300px;
         height: 350px;
     
+    }
+    .d-block {
+        width: 600px;
+        height: 800px;
+        padding: 80px;
+        
     }
 
     .titulo-productos{
@@ -524,3 +739,42 @@ button{
     }
     
 }
+
+
+
+
+
+/*PAGINA SEGUIMIENTO ENVIOS*/
+
+
+
+
+/*PAGINA COMO COMPRAR*/
+
+.informacion-pagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.info-pasos{
+    display: flex;
+    flex-wrap: wrap;
+        
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    
+}
+
+.iconos{
+    width: 80px;
+    height: 80px;
+
+}
+

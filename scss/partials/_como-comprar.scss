@@ -1,0 +1,28 @@
+
+
+.informacion-pagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.info-pasos{
+    display: flex;
+    flex-wrap: wrap;
+        
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    
+}
+
+.iconos{
+    width: 80px;
+    height: 80px;
+
+}

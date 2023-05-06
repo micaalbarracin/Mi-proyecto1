@@ -1,0 +1,18 @@
+.informacion-pagina{
+    @include flex-columna;
+    text-align: center;
+    margin: 50px;
+
+
+
+}
+
+.informacion{
+    @include flex-columna;
+    padding: 30px;
+    
+}
+.aviso-importante{
+    font-size: 20px;
+
+}

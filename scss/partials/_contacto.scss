@@ -1,0 +1,60 @@
+
+.contacto-página{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px ;
+    background-image: url(../img/fondo-pared-rosaviejojpg.jpg);
+    font-size: 20px;
+    font-weight: 700;
+
+
+}
+.fondo-titulo{
+    background-color: #E4D0D0;
+}
+.formulario-página form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-size: 15px;
+}
+
+
+
+.cajita-formulario{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+        
+}
+
+/* ver porque no me lo toma*/
+.boton-enviar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    cursor: pointer;
+    border-radius: 20px;
+    
+    
+}
+
+
+
+/*PÁGINA CONTACTO*/
+
+.informacion-pagina {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #F9F5E7;
+}

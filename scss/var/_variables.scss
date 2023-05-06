@@ -1,0 +1,47 @@
+/*PALETA DE COLORES*/
+
+$color-primario: black;
+$color_secundario: #eddbc7;
+$color-terceario:#f9f5e7;
+
+
+/*TAMAÑO DE FUENTES E ICONOS*/
+
+$fuente-chica: 14px;
+$fuente-media: 20px;
+$icono_chico: 40px;
+$icono_grande:60px;
+
+
+/*RESOLUCIONES DE PANTALLAS*/
+
+$tablet: 768px;
+$desktop: 992px;
+
+/* SEPARACIONES( MARGENES Y PADDINGS)*/
+
+$espacio-Xchico: 10px;
+$espacio-chico: 20px;
+$espacio-medio: 40px;
+$espacio-grande: 60px;
+
+/*FUENTE*/
+
+$fuente-principal: 'Montserrat', sans-serif;
+
+/*MIXINS (guardo lo que voy a repertir)*/
+
+@mixin flex-columna{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-fila{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+}

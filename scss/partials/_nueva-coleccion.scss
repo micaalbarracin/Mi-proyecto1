@@ -1,0 +1,93 @@
+
+
+.color-pagina{
+    background-color:rgb(246, 240, 232);
+
+}
+.titulo-productos{
+margin: 20px;
+padding: 20px;
+}
+
+
+.container-opciones{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: 20px;
+gap: 20px;
+font-size: 12px;
+
+}
+
+.boton{
+background-color:#E4D0D0;
+padding: 10px;
+}
+
+.container-opciones label{
+cursor: pointer;
+}
+
+
+.card-imagen{
+    width: 200px;
+}
+
+.padre-cards {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+font-size: 14px;
+
+
+}
+
+
+.mochilas,.carteras{
+display: flex;
+flex-direction: column;
+gap: 20px;
+background-color: white;
+padding: 20px;
+border: solid 1px; 
+width: 250px;
+
+
+}
+
+.boton-agregar-carrito{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+
+/*ocultar los radio*/
+
+#Mochilas,#Carteras,#Riñoneras,#Todos{
+display: none;
+}
+
+.carteras,.riñoneras{
+display: none;
+}
+
+/*cuando mochilas se selccione, inmediatamente lo que viene dentro del pade card con la clase remera se muestre*/
+
+#Mochilas:checked ~ .padre-cards .mochilas,
+#Carteras:checked ~ .padre-cards .carteras
+#Riñoneras:checked ~ .padre-cards .riñoneras{
+display: flex;
+}
+
+#Todos:checked ~ .padre-cards .mochilas,
+#Todos:checked ~ .padre-cards .carteras{
+display: flex;
+}
+
+

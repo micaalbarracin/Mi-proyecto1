@@ -64,7 +64,7 @@ button a{
     @include flex-fila;
     background-color:#a7727d;
     font-size: 10px;
-    padding: 3px;
+    text-align: center;
     width: 100%;
     font-weight: 900;
 }
@@ -88,6 +88,7 @@ button a{
 
     
 }
+
 /*PSEUDOCLASE*/
 
 .lista-menu li:hover{
@@ -115,10 +116,29 @@ button a{
 
 
 
-
 /*ENFOQUE TABLE*/
 
-@media (min-width: 480px) {
+@media (min-width: 480px){
+    h2 {
+        color: black;
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+        padding: 50px;
+        text-align: center;
+      }
+
+    .aviso-pagina {
+        @include flex-fila;
+        background-color: #a7727d;
+        font-size: 10px;
+        text-align: center;
+        width: 100%;
+        font-weight: 900;
+    }
+
     .imagen-logo{
         width: 150px;
         height: 150px;

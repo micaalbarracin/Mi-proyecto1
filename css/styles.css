@@ -36,7 +36,8 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 h2 {
@@ -45,7 +46,7 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
   padding: 50px;
   text-align: center;
 }
@@ -77,10 +78,10 @@ button a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
   background-color: #a7727d;
   font-size: 10px;
-  padding: 3px;
+  text-align: center;
   width: 100%;
   font-weight: 900;
 }
@@ -127,6 +128,27 @@ button a {
 
 /*ENFOQUE TABLE*/
 @media (min-width: 480px) {
+  h2 {
+    color: black;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    padding: 50px;
+    text-align: center;
+  }
+  .aviso-pagina {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #a7727d;
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+    font-weight: 900;
+  }
   .imagen-logo {
     width: 150px;
     height: 150px;
@@ -144,7 +166,7 @@ button a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     text-align: center;
     margin: 50px;
     gap: 60px;
@@ -163,7 +185,7 @@ button a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     gap: 60px;
   }
   .mochilas, .carteras {
@@ -189,6 +211,16 @@ button a {
 }
 /*ENFOQUE DESKTOP*/
 @media (min-width: 992px) {
+  h1 {
+    color: black;
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
   .imagen-logo {
     width: 150px;
     height: 150px;
@@ -217,7 +249,7 @@ button a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     margin: 50px;
     gap: 60px;
     font-size: 20px;
@@ -244,14 +276,25 @@ button a {
     width: 300px;
   }
 }
-.aviso-pagina {
+h2 {
+  color: black;
+  font-size: 25px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-self: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.aviso-pagina {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background-color: #a7727d;
   font-size: 10px;
-  padding: 3px;
   width: 100%;
   font-weight: 900;
 }
@@ -429,14 +472,42 @@ button {
   transform: scale(1.2);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
+  h2 {
+    color: black;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    padding: 50px;
+    text-align: center;
+  }
   .d-block {
     width: 400px;
     height: 700px;
     padding: 60px;
   }
+  .aviso-pagina {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #a7727d;
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+    font-weight: 900;
+  }
 }
 @media (min-width: 992px) {
+  .titulo-prod-destacados {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
   .d-block {
     width: 600px;
     height: 900px;
@@ -450,6 +521,8 @@ button {
 .titulo-productos {
   margin: 20px;
   padding: 20px;
+  font-size: 40px;
+  text-align: center;
 }
 
 .container-opciones {
@@ -484,16 +557,44 @@ button {
   font-size: 14px;
 }
 
-.mochilas, .carteras {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  background-color: white;
-  padding: 20px;
-  border: solid 1px;
-  width: 250px;
+@media (min-width: 480px) {
+  .padre-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "card_1 card_2" "card_3 card_4" "card_5 card_6";
+    align-items: center;
+    justify-self: center;
+    gap: 60px;
+  }
+  .card_1 {
+    grid-area: card_1;
+  }
+  .card_2 {
+    grid-area: card_2;
+  }
+  .card_3 {
+    grid-area: card_3;
+  }
+  .card_4 {
+    grid-area: card_4;
+  }
+  .card_5 {
+    grid-area: card_5;
+  }
+  .card_6 {
+    grid-area: card_6;
+  }
+  .mochilas, .carteras {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border: solid 1px;
+    width: 250px;
+  }
 }
-
 .boton-agregar-carrito {
   display: flex;
   flex-direction: row;
@@ -627,12 +728,12 @@ button {
   transform: scale(1.2);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .aviso-gift {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     text-align: center;
   }
 }
@@ -641,7 +742,7 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
     text-align: center;
   }
 }
@@ -746,6 +847,16 @@ button {
   align-items: center;
   justify-content: center;
   padding: 30px;
+}
+
+#error-404 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

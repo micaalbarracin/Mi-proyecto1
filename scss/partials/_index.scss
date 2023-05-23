@@ -1,8 +1,20 @@
+h2 {
+    color: black;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    padding: 50px;
+    text-align: center;
+  }
+
 .aviso-pagina{
     @include flex-fila;
+    text-align: center;
     background-color:#a7727d;
     font-size: 10px;
-    padding: 3px;
+
     width: 100%;
     font-weight: 900;
 }
@@ -195,15 +207,43 @@ button{
 
 }
 
-@media (min-width:$tablet){
+@media (min-width: 480px){
+    h2 {
+        color: black;
+        font-size: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+        padding: 50px;
+        text-align: center;
+    }
+
     .d-block {
         width: 400px;
         height: 700px;
         padding: 60px;
+
+    }
+    .aviso-pagina {
+        @include flex-fila;
+        background-color: #a7727d;
+        font-size: 10px;
+        text-align: center;
+        width: 100%;
+        font-weight: 900;
     }
 }
 
 @media (min-width:$desktop){
+    .titulo-prod-destacados{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
     .d-block {
         width: 600px;
         height: 900px;

@@ -37,7 +37,6 @@ h1 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 30px;
 }
 
 h2 {
@@ -211,16 +210,6 @@ button a {
 }
 /*ENFOQUE DESKTOP*/
 @media (min-width: 992px) {
-  h1 {
-    color: black;
-    font-size: 28px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-  }
-  
   .imagen-logo {
     width: 150px;
     height: 150px;
@@ -555,6 +544,17 @@ button {
   justify-content: center;
   text-align: center;
   font-size: 14px;
+  gap: 30px;
+}
+
+.mochilas, .carteras {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border: solid 1px;
+  width: 250px;
 }
 
 @media (min-width: 480px) {
@@ -565,7 +565,13 @@ button {
     grid-template-areas: "card_1 card_2" "card_3 card_4" "card_5 card_6";
     align-items: center;
     justify-self: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 60px;
+    margin: 30px;
+    padding: 30px;
+    position: static;
+    align-self: center;
   }
   .card_1 {
     grid-area: card_1;
